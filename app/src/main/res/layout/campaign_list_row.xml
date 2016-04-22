@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <com.nomad.cuppcebe.components.SquareImageView
+        android:id="@+id/campaignListImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/campaignListImage"
+        android:background="@drawable/shoplistitem_gradient_text">
+
+        <TextView
+            android:id="@+id/campaignProductName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textColor="@android:color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/campaignShopName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/campaignProductName"
+            android:padding="10dp"
+            android:textColor="@android:color/black"
+            android:textSize="16dp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>
